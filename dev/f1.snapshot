@@ -1,0 +1,127 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "424e2270-70b1-320f-a212-c22b63cb065d",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "e2d7871d-0184-1000-2529-c5f3bce8345c",
+        "labels" : [ ],
+        "name" : "prova",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 415.0,
+          "y" : 261.0028381347656
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "424e2270-70b1-320f-a212-c22b63cb065d",
+          "identifier" : "80b984d8-f21d-33a4-9fdf-1162fa19ea11",
+          "instanceIdentifier" : "e2d7adb7-0184-1000-1815-8a92c1fc4b28",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LookupRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 573.0,
+            "y" : 191.00284576416016
+          },
+          "properties" : {
+            "result-contents" : "insert-entire-record",
+            "routing-strategy" : "route-to-success",
+            "record-path-lookup-miss-result-cache-size" : "0",
+            "record-update-strategy" : "use-property"
+          },
+          "propertyDescriptors" : {
+            "result-contents" : {
+              "displayName" : "Record Result Contents",
+              "identifiesControllerService" : false,
+              "name" : "result-contents",
+              "sensitive" : false
+            },
+            "routing-strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "routing-strategy",
+              "sensitive" : false
+            },
+            "record-path-lookup-miss-result-cache-size" : {
+              "displayName" : "Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "record-path-lookup-miss-result-cache-size",
+              "sensitive" : false
+            },
+            "result-record-path" : {
+              "displayName" : "Result RecordPath",
+              "identifiesControllerService" : false,
+              "name" : "result-record-path",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "lookup-service" : {
+              "displayName" : "Lookup Service",
+              "identifiesControllerService" : true,
+              "name" : "lookup-service",
+              "sensitive" : false
+            },
+            "record-update-strategy" : {
+              "displayName" : "Record Update Strategy",
+              "identifiesControllerService" : false,
+              "name" : "record-update-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LookupRecord",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
