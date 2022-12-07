@@ -1,0 +1,80 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "231f579d-c20c-37fc-a52b-f6c2c7ee71e7",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "ecc8b444-0184-1000-a7a3-653e2b964db7",
+        "labels" : [ ],
+        "name" : "test1",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 328.0,
+          "y" : 144.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-sample-nar",
+            "group" : "it.eng",
+            "version" : "1.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "231f579d-c20c-37fc-a52b-f6c2c7ee71e7",
+          "identifier" : "52f96eb0-45a6-3d28-a3bb-06a61100940f",
+          "instanceIdentifier" : "ecc91f55-0184-1000-d1bb-a8f47f00b3fc",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "MyProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 612.0,
+            "y" : 290.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : {
+            "MY_PROPERTY" : {
+              "displayName" : "My property",
+              "identifiesControllerService" : false,
+              "name" : "MY_PROPERTY",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "it.eng.processors.sample.MyProcessor",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
