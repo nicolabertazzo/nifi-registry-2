@@ -333,6 +333,91 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "identifier" : "26240773-86f5-3020-8a47-dec763ed627d",
+          "instanceIdentifier" : "2fd6ef09-0185-1000-8048-fd4fd042127f",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "CountText",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 567.9861255114798,
+            "y" : 577.8547595797125
+          },
+          "properties" : {
+            "ajust-immediately" : "false",
+            "character-encoding" : "UTF-8",
+            "text-line-count" : "true",
+            "text-character-count" : "false",
+            "text-line-nonempty-count" : "false",
+            "text-word-count" : "false",
+            "split-words-on-symbols" : "false"
+          },
+          "propertyDescriptors" : {
+            "ajust-immediately" : {
+              "displayName" : "Call Immediate Adjustment",
+              "identifiesControllerService" : false,
+              "name" : "ajust-immediately",
+              "sensitive" : false
+            },
+            "character-encoding" : {
+              "displayName" : "Character Encoding",
+              "identifiesControllerService" : false,
+              "name" : "character-encoding",
+              "sensitive" : false
+            },
+            "text-line-count" : {
+              "displayName" : "Count Lines",
+              "identifiesControllerService" : false,
+              "name" : "text-line-count",
+              "sensitive" : false
+            },
+            "text-character-count" : {
+              "displayName" : "Count Characters",
+              "identifiesControllerService" : false,
+              "name" : "text-character-count",
+              "sensitive" : false
+            },
+            "text-line-nonempty-count" : {
+              "displayName" : "Count Non-Empty Lines",
+              "identifiesControllerService" : false,
+              "name" : "text-line-nonempty-count",
+              "sensitive" : false
+            },
+            "text-word-count" : {
+              "displayName" : "Count Words",
+              "identifiesControllerService" : false,
+              "name" : "text-word-count",
+              "sensitive" : false
+            },
+            "split-words-on-symbols" : {
+              "displayName" : "Split Words on Symbols",
+              "identifiesControllerService" : false,
+              "name" : "split-words-on-symbols",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.CountText",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
           "identifier" : "f5fd088d-63f8-3009-a386-db14bcb80f6b",
           "instanceIdentifier" : "dc65d776-04f8-351d-952b-f0cad076b0e2",
           "maxBackoffPeriod" : "10 mins",
