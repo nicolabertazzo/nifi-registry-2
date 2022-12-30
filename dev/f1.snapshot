@@ -393,6 +393,180 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
+            "artifact" : "nifi-cdc-mysql-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "identifier" : "a761345c-aa95-31ca-ba54-5b035f69bd93",
+          "instanceIdentifier" : "6425d20e-0185-1000-dde8-d77b00d0e902",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "CaptureChangeMySQL",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1456.0,
+            "y" : 440.0
+          },
+          "properties" : {
+            "capture-change-mysql-include-ddl-events" : "false",
+            "capture-change-mysql-driver-class" : "com.mysql.jdbc.Driver",
+            "SSL Mode" : "DISABLED",
+            "capture-change-mysql-include-begin-commit" : "false",
+            "capture-change-mysql-retrieve-all-records" : "true",
+            "capture-change-mysql-state-update-interval" : "0 seconds",
+            "capture-change-mysql-use-gtid" : "false",
+            "capture-change-mysql-max-wait-time" : "30 seconds"
+          },
+          "propertyDescriptors" : {
+            "capture-change-mysql-include-ddl-events" : {
+              "displayName" : "Include DDL Events",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-include-ddl-events",
+              "sensitive" : false
+            },
+            "capture-change-mysql-db-name-pattern" : {
+              "displayName" : "Database/Schema Name Pattern",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-db-name-pattern",
+              "sensitive" : false
+            },
+            "capture-change-mysql-dist-map-cache-client" : {
+              "displayName" : "Distributed Map Cache Client",
+              "identifiesControllerService" : true,
+              "name" : "capture-change-mysql-dist-map-cache-client",
+              "sensitive" : false
+            },
+            "capture-change-mysql-init-seq-id" : {
+              "displayName" : "Initial Sequence ID",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-init-seq-id",
+              "sensitive" : false
+            },
+            "capture-change-mysql-name-pattern" : {
+              "displayName" : "Table Name Pattern",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-name-pattern",
+              "sensitive" : false
+            },
+            "capture-change-mysql-driver-class" : {
+              "displayName" : "MySQL Driver Class Name",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-driver-class",
+              "sensitive" : false
+            },
+            "capture-change-mysql-driver-locations" : {
+              "displayName" : "MySQL Driver Location(s)",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-driver-locations",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "URL", "DIRECTORY", "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "SSL Mode" : {
+              "displayName" : "SSL Mode",
+              "identifiesControllerService" : false,
+              "name" : "SSL Mode",
+              "sensitive" : false
+            },
+            "capture-change-mysql-include-begin-commit" : {
+              "displayName" : "Include Begin/Commit Events",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-include-begin-commit",
+              "sensitive" : false
+            },
+            "capture-change-mysql-server-id" : {
+              "displayName" : "Server ID",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-server-id",
+              "sensitive" : false
+            },
+            "capture-change-mysql-init-binlog-filename" : {
+              "displayName" : "Initial Binlog Filename",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-init-binlog-filename",
+              "sensitive" : false
+            },
+            "capture-change-mysql-init-binlog-position" : {
+              "displayName" : "Initial Binlog Position",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-init-binlog-position",
+              "sensitive" : false
+            },
+            "capture-change-mysql-init-gtid" : {
+              "displayName" : "Initial Binlog GTID",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-init-gtid",
+              "sensitive" : false
+            },
+            "capture-change-mysql-hosts" : {
+              "displayName" : "MySQL Hosts",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-hosts",
+              "sensitive" : false
+            },
+            "capture-change-mysql-username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-username",
+              "sensitive" : false
+            },
+            "capture-change-mysql-retrieve-all-records" : {
+              "displayName" : "Retrieve All Records",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-retrieve-all-records",
+              "sensitive" : false
+            },
+            "SSL Context Service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "SSL Context Service",
+              "sensitive" : false
+            },
+            "capture-change-mysql-state-update-interval" : {
+              "displayName" : "State Update Interval",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-state-update-interval",
+              "sensitive" : false
+            },
+            "capture-change-mysql-use-gtid" : {
+              "displayName" : "Use Binlog GTID",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-use-gtid",
+              "sensitive" : false
+            },
+            "capture-change-mysql-password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-password",
+              "sensitive" : true
+            },
+            "capture-change-mysql-max-wait-time" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "capture-change-mysql-max-wait-time",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.cdc.mysql.processors.CaptureChangeMySQL",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
             "version" : "1.19.1"
