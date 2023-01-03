@@ -1,7 +1,0 @@
-flows:
-  e6233f49-df87-4c04-b313-8ed3c6dd36d0: {ver: 13, file: f1.snapshot, comments: add,
-    author: anonymous, created: 1672422773098, flowName: f1, flowDesc: ''}
-  6bbe10df-0942-40e4-87a6-3ef3b7b16904: {ver: 2, file: test1.snapshot, comments: '',
-    author: anonymous, created: 1670430973217, flowName: test1, flowDesc: ''}
-layoutVer: 1
-bucketId: b42c15bb-6527-445a-bdc9-6a9d48755215
