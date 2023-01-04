@@ -101,6 +101,157 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
+            "artifact" : "nifi-azure-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "identifier" : "101c483d-9137-305e-a1e9-dfd27582718b",
+          "instanceIdentifier" : "2fae98b9-0185-1000-5fc8-4283a696bf1e",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ConsumeAzureEventHub",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1912.0,
+            "y" : 331.0
+          },
+          "properties" : {
+            "use-managed-identity" : "false",
+            "Service Bus Endpoint" : ".servicebus.windows.net",
+            "event-hub-prefetch-count" : "300",
+            "event-hub-initial-offset" : "end-of-stream",
+            "event-hub-batch-size" : "10",
+            "event-hub-message-receive-timeout" : "1 min",
+            "event-hub-consumer-group" : "$Default"
+          },
+          "propertyDescriptors" : {
+            "use-managed-identity" : {
+              "displayName" : "Use Azure Managed Identity",
+              "identifiesControllerService" : false,
+              "name" : "use-managed-identity",
+              "sensitive" : false
+            },
+            "Service Bus Endpoint" : {
+              "displayName" : "Service Bus Endpoint",
+              "identifiesControllerService" : false,
+              "name" : "Service Bus Endpoint",
+              "sensitive" : false
+            },
+            "event-hub-shared-access-policy-name" : {
+              "displayName" : "Shared Access Policy Name",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-shared-access-policy-name",
+              "sensitive" : false
+            },
+            "event-hub-namespace" : {
+              "displayName" : "Event Hub Namespace",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-namespace",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "event-hub-prefetch-count" : {
+              "displayName" : "Prefetch Count",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-prefetch-count",
+              "sensitive" : false
+            },
+            "event-hub-initial-offset" : {
+              "displayName" : "Initial Offset",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-initial-offset",
+              "sensitive" : false
+            },
+            "storage-container-name" : {
+              "displayName" : "Storage Container Name",
+              "identifiesControllerService" : false,
+              "name" : "storage-container-name",
+              "sensitive" : false
+            },
+            "storage-account-name" : {
+              "displayName" : "Storage Account Name",
+              "identifiesControllerService" : false,
+              "name" : "storage-account-name",
+              "sensitive" : false
+            },
+            "event-hub-batch-size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-batch-size",
+              "sensitive" : false
+            },
+            "storage-sas-token" : {
+              "displayName" : "Storage SAS Token",
+              "identifiesControllerService" : false,
+              "name" : "storage-sas-token",
+              "sensitive" : true
+            },
+            "event-hub-consumer-hostname" : {
+              "displayName" : "Consumer Hostname",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-consumer-hostname",
+              "sensitive" : false
+            },
+            "event-hub-shared-access-policy-primary-key" : {
+              "displayName" : "Shared Access Policy Primary Key",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-shared-access-policy-primary-key",
+              "sensitive" : true
+            },
+            "event-hub-message-receive-timeout" : {
+              "displayName" : "Message Receive Timeout",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-message-receive-timeout",
+              "sensitive" : false
+            },
+            "storage-account-key" : {
+              "displayName" : "Storage Account Key",
+              "identifiesControllerService" : false,
+              "name" : "storage-account-key",
+              "sensitive" : true
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "event-hub-consumer-group" : {
+              "displayName" : "Consumer Group",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-consumer-group",
+              "sensitive" : false
+            },
+            "event-hub-name" : {
+              "displayName" : "Event Hub Name",
+              "identifiesControllerService" : false,
+              "name" : "event-hub-name",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.azure.eventhub.ConsumeAzureEventHub",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
             "artifact" : "nifi-cybersecurity-nar",
             "group" : "org.apache.nifi",
             "version" : "1.19.0"
