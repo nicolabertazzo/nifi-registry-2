@@ -23,8 +23,8 @@
         "name" : "prova",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -248.0,
-          "y" : -216.0
+          "x" : -384.0,
+          "y" : -208.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -318,91 +318,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.cybersecurity.CompareFuzzyHash",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.19.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
-          "identifier" : "26240773-86f5-3020-8a47-dec763ed627d",
-          "instanceIdentifier" : "15b9470e-6e00-36dc-bcd2-c04bf1d9cb34",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "CountText",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 567.9861255114798,
-            "y" : 577.8547595797125
-          },
-          "properties" : {
-            "ajust-immediately" : "false",
-            "character-encoding" : "UTF-8",
-            "text-line-count" : "true",
-            "text-character-count" : "false",
-            "text-line-nonempty-count" : "false",
-            "text-word-count" : "false",
-            "split-words-on-symbols" : "false"
-          },
-          "propertyDescriptors" : {
-            "ajust-immediately" : {
-              "displayName" : "Call Immediate Adjustment",
-              "identifiesControllerService" : false,
-              "name" : "ajust-immediately",
-              "sensitive" : false
-            },
-            "character-encoding" : {
-              "displayName" : "Character Encoding",
-              "identifiesControllerService" : false,
-              "name" : "character-encoding",
-              "sensitive" : false
-            },
-            "text-line-count" : {
-              "displayName" : "Count Lines",
-              "identifiesControllerService" : false,
-              "name" : "text-line-count",
-              "sensitive" : false
-            },
-            "text-character-count" : {
-              "displayName" : "Count Characters",
-              "identifiesControllerService" : false,
-              "name" : "text-character-count",
-              "sensitive" : false
-            },
-            "text-line-nonempty-count" : {
-              "displayName" : "Count Non-Empty Lines",
-              "identifiesControllerService" : false,
-              "name" : "text-line-nonempty-count",
-              "sensitive" : false
-            },
-            "text-word-count" : {
-              "displayName" : "Count Words",
-              "identifiesControllerService" : false,
-              "name" : "text-word-count",
-              "sensitive" : false
-            },
-            "split-words-on-symbols" : {
-              "displayName" : "Split Words on Symbols",
-              "identifiesControllerService" : false,
-              "name" : "split-words-on-symbols",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.CountText",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
