@@ -16,15 +16,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "3fa1d0f6-753c-3d32-aa05-a5503e7faa5d",
+        "identifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "2ab4a871-0185-1000-2cb7-13a4837d1c4f",
+        "instanceIdentifier" : "2f6199b7-0185-1000-6cf5-e95436adea03",
         "labels" : [ ],
         "name" : "prova",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 60.134982816457864,
-          "y" : 195.76938216924694
+          "x" : 343.0,
+          "y" : 184.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -40,9 +40,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3fa1d0f6-753c-3d32-aa05-a5503e7faa5d",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
           "identifier" : "0863edc1-8326-3fa5-a6a8-94efd88312fd",
-          "instanceIdentifier" : "2ab87f29-0185-1000-250b-2dfb651b7582",
+          "instanceIdentifier" : "6c030e50-ab92-377c-e5ce-42e416bff169",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -101,6 +101,78 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
+            "artifact" : "nifi-cybersecurity-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "identifier" : "60bb228d-7929-3b09-8885-6842e9575038",
+          "instanceIdentifier" : "2f61d1f8-0185-1000-c1e6-14135f75ad86",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "CompareFuzzyHash",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1077.0,
+            "y" : 666.0
+          },
+          "properties" : {
+            "ATTRIBUTE_NAME" : "fuzzyhash.value",
+            "MATCHING_MODE" : "single"
+          },
+          "propertyDescriptors" : {
+            "ATTRIBUTE_NAME" : {
+              "displayName" : "Hash Attribute Name",
+              "identifiesControllerService" : false,
+              "name" : "ATTRIBUTE_NAME",
+              "sensitive" : false
+            },
+            "HASH_LIST_FILE" : {
+              "displayName" : "Hash List Source File",
+              "identifiesControllerService" : false,
+              "name" : "HASH_LIST_FILE",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "HASH_ALGORITHM" : {
+              "displayName" : "Hashing Algorithm",
+              "identifiesControllerService" : false,
+              "name" : "HASH_ALGORITHM",
+              "sensitive" : false
+            },
+            "MATCH_THRESHOLD" : {
+              "displayName" : "Match Threshold",
+              "identifiesControllerService" : false,
+              "name" : "MATCH_THRESHOLD",
+              "sensitive" : false
+            },
+            "MATCHING_MODE" : {
+              "displayName" : "Matching Mode",
+              "identifiesControllerService" : false,
+              "name" : "MATCHING_MODE",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.cybersecurity.CompareFuzzyHash",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
             "version" : "1.19.0"
@@ -109,9 +181,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3fa1d0f6-753c-3d32-aa05-a5503e7faa5d",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
           "identifier" : "f5fd088d-63f8-3009-a386-db14bcb80f6b",
-          "instanceIdentifier" : "c252e5b1-e149-3993-7a99-27972616112c",
+          "instanceIdentifier" : "dc65d776-04f8-351d-952b-f0cad076b0e2",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -178,9 +250,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3fa1d0f6-753c-3d32-aa05-a5503e7faa5d",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
           "identifier" : "0ee8eebd-95c9-31f4-a3cf-422b139b2301",
-          "instanceIdentifier" : "2ab4f5e0-0185-1000-d27d-b175052a2b05",
+          "instanceIdentifier" : "0aff2016-301c-3596-f644-cac4a81e671b",
           "maxBackoffPeriod" : "10 mins",
           "name" : "CompareFuzzyHash",
           "penaltyDuration" : "30 sec",
@@ -250,9 +322,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3fa1d0f6-753c-3d32-aa05-a5503e7faa5d",
+          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
           "identifier" : "80b984d8-f21d-33a4-9fdf-1162fa19ea11",
-          "instanceIdentifier" : "52b1ce3d-2e05-3a47-46bd-6badc3780942",
+          "instanceIdentifier" : "a7596abd-ac7b-3ae0-68de-54e72a5a2133",
           "maxBackoffPeriod" : "10 mins",
           "name" : "LookupRecord",
           "penaltyDuration" : "30 sec",
