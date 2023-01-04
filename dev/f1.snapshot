@@ -16,15 +16,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+        "identifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "2f6199b7-0185-1000-6cf5-e95436adea03",
+        "instanceIdentifier" : "533aa793-0185-1000-29d6-c62776d279ce",
         "labels" : [ ],
         "name" : "prova",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 343.0,
-          "y" : 184.0
+          "x" : 369.0,
+          "y" : 197.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -34,15 +34,15 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "0863edc1-8326-3fa5-a6a8-94efd88312fd",
-          "instanceIdentifier" : "6c030e50-ab92-377c-e5ce-42e416bff169",
+          "instanceIdentifier" : "85d1011a-30e7-305a-05f9-6d70c13d7167",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -103,15 +103,15 @@
           "bundle" : {
             "artifact" : "nifi-azure-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "101c483d-9137-305e-a1e9-dfd27582718b",
-          "instanceIdentifier" : "2fae98b9-0185-1000-5fc8-4283a696bf1e",
+          "instanceIdentifier" : "46ee7717-70b0-3fbc-ba18-450bc135bb6c",
           "maxBackoffPeriod" : "10 mins",
           "name" : "ConsumeAzureEventHub",
           "penaltyDuration" : "30 sec",
@@ -254,15 +254,15 @@
           "bundle" : {
             "artifact" : "nifi-cybersecurity-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "60bb228d-7929-3b09-8885-6842e9575038",
-          "instanceIdentifier" : "2f61d1f8-0185-1000-c1e6-14135f75ad86",
+          "instanceIdentifier" : "a252729e-7cfc-3bc2-5130-2ec4fb081e9e",
           "maxBackoffPeriod" : "10 mins",
           "name" : "CompareFuzzyHash",
           "penaltyDuration" : "30 sec",
@@ -326,15 +326,15 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "26240773-86f5-3020-8a47-dec763ed627d",
-          "instanceIdentifier" : "2fd6ef09-0185-1000-8048-fd4fd042127f",
+          "instanceIdentifier" : "84b6c832-4558-3e76-255a-3bfd4802308a",
           "maxBackoffPeriod" : "10 mins",
           "name" : "CountText",
           "penaltyDuration" : "30 sec",
@@ -411,15 +411,15 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "fa9824a7-52ee-3682-bda4-95a2d07bb0e5",
-          "instanceIdentifier" : "2fe40a26-0185-1000-b452-fd6f14717984",
+          "instanceIdentifier" : "edf9b746-f9d0-373e-2374-4102d66230a7",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -480,15 +480,15 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "f5fd088d-63f8-3009-a386-db14bcb80f6b",
-          "instanceIdentifier" : "dc65d776-04f8-351d-952b-f0cad076b0e2",
+          "instanceIdentifier" : "4213085e-25d2-3de0-81ce-510c10bd2db0",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -547,89 +547,17 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
-            "artifact" : "nifi-cybersecurity-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.19.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
-          "identifier" : "0ee8eebd-95c9-31f4-a3cf-422b139b2301",
-          "instanceIdentifier" : "0aff2016-301c-3596-f644-cac4a81e671b",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "CompareFuzzyHash",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1319.999982708382,
-            "y" : 378.9999938473514
-          },
-          "properties" : {
-            "ATTRIBUTE_NAME" : "fuzzyhash.value",
-            "MATCHING_MODE" : "single"
-          },
-          "propertyDescriptors" : {
-            "ATTRIBUTE_NAME" : {
-              "displayName" : "Hash Attribute Name",
-              "identifiesControllerService" : false,
-              "name" : "ATTRIBUTE_NAME",
-              "sensitive" : false
-            },
-            "HASH_LIST_FILE" : {
-              "displayName" : "Hash List Source File",
-              "identifiesControllerService" : false,
-              "name" : "HASH_LIST_FILE",
-              "resourceDefinition" : {
-                "cardinality" : "SINGLE",
-                "resourceTypes" : [ "FILE" ]
-              },
-              "sensitive" : false
-            },
-            "HASH_ALGORITHM" : {
-              "displayName" : "Hashing Algorithm",
-              "identifiesControllerService" : false,
-              "name" : "HASH_ALGORITHM",
-              "sensitive" : false
-            },
-            "MATCH_THRESHOLD" : {
-              "displayName" : "Match Threshold",
-              "identifiesControllerService" : false,
-              "name" : "MATCH_THRESHOLD",
-              "sensitive" : false
-            },
-            "MATCHING_MODE" : {
-              "displayName" : "Matching Mode",
-              "identifiesControllerService" : false,
-              "name" : "MATCHING_MODE",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.cybersecurity.CompareFuzzyHash",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.19.0"
+            "version" : "1.19.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a75bf654-0446-37b1-a308-b52f496901ea",
+          "groupIdentifier" : "ba4be680-5202-3b10-aa91-10d72bde7736",
           "identifier" : "80b984d8-f21d-33a4-9fdf-1162fa19ea11",
-          "instanceIdentifier" : "a7596abd-ac7b-3ae0-68de-54e72a5a2133",
+          "instanceIdentifier" : "8e1d1999-78d9-3c97-8cbb-a35f4ab680f6",
           "maxBackoffPeriod" : "10 mins",
           "name" : "LookupRecord",
           "penaltyDuration" : "30 sec",
