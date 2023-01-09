@@ -16,87 +16,18 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+        "identifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "63afa85d-0185-1000-acfc-fed73e3a96cb",
+        "instanceIdentifier" : "7c530a75-0185-1000-4e6a-6f17be681a68",
         "labels" : [ ],
         "name" : "prova",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -384.0,
-          "y" : -208.0
+          "x" : 304.0,
+          "y" : 24.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.19.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
-          "identifier" : "0863edc1-8326-3fa5-a6a8-94efd88312fd",
-          "instanceIdentifier" : "1d5ab3be-ff12-3dc3-0379-cc00317e827d",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "AttributesToJSON",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1288.0,
-            "y" : 96.0
-          },
-          "properties" : {
-            "Destination" : "flowfile-attribute",
-            "Null Value" : "false",
-            "Include Core Attributes" : "true"
-          },
-          "propertyDescriptors" : {
-            "attributes-to-json-regex" : {
-              "displayName" : "Attributes Regular Expression",
-              "identifiesControllerService" : false,
-              "name" : "attributes-to-json-regex",
-              "sensitive" : false
-            },
-            "Destination" : {
-              "displayName" : "Destination",
-              "identifiesControllerService" : false,
-              "name" : "Destination",
-              "sensitive" : false
-            },
-            "Null Value" : {
-              "displayName" : "Null Value",
-              "identifiesControllerService" : false,
-              "name" : "Null Value",
-              "sensitive" : false
-            },
-            "Attributes List" : {
-              "displayName" : "Attributes List",
-              "identifiesControllerService" : false,
-              "name" : "Attributes List",
-              "sensitive" : false
-            },
-            "Include Core Attributes" : {
-              "displayName" : "Include Core Attributes",
-              "identifiesControllerService" : false,
-              "name" : "Include Core Attributes",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.AttributesToJSON",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -109,9 +40,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "groupIdentifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
           "identifier" : "101c483d-9137-305e-a1e9-dfd27582718b",
-          "instanceIdentifier" : "9c8aaaad-c524-3cd4-103d-912860310068",
+          "instanceIdentifier" : "0f2ae626-d93c-3b75-6b86-a4ebce31a3d7",
           "maxBackoffPeriod" : "10 mins",
           "name" : "ConsumeAzureEventHub",
           "penaltyDuration" : "30 sec",
@@ -260,9 +191,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "groupIdentifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
           "identifier" : "60bb228d-7929-3b09-8885-6842e9575038",
-          "instanceIdentifier" : "0e40cfa7-f83c-331a-a3d4-daba53c498b3",
+          "instanceIdentifier" : "0c6cde63-37b7-368a-1ced-c5cba42ed7ee",
           "maxBackoffPeriod" : "10 mins",
           "name" : "CompareFuzzyHash",
           "penaltyDuration" : "30 sec",
@@ -332,9 +263,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "groupIdentifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
           "identifier" : "f5fd088d-63f8-3009-a386-db14bcb80f6b",
-          "instanceIdentifier" : "9f42f678-5601-335a-fc9e-bbe874be72ee",
+          "instanceIdentifier" : "d96d3235-f8ce-35c2-37b8-32b08627693e",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -401,9 +332,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "PRIMARY",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "groupIdentifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
           "identifier" : "a761345c-aa95-31ca-ba54-5b035f69bd93",
-          "instanceIdentifier" : "6425d20e-0185-1000-dde8-d77b00d0e902",
+          "instanceIdentifier" : "e65e0de4-98de-3370-df60-2e189d1f74ec",
           "maxBackoffPeriod" : "10 mins",
           "name" : "CaptureChangeMySQL",
           "penaltyDuration" : "30 sec",
@@ -575,15 +506,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b4fad5b0-9ade-31e1-a1b4-34346870b39b",
+          "groupIdentifier" : "aacf9560-fed0-3b21-b343-ceb4a306488d",
           "identifier" : "80b984d8-f21d-33a4-9fdf-1162fa19ea11",
-          "instanceIdentifier" : "4f1156e4-5bfc-3d79-03dd-fa528c118869",
+          "instanceIdentifier" : "06e3433f-b69e-3790-eced-5530ec8115b5",
           "maxBackoffPeriod" : "10 mins",
           "name" : "LookupRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 640.0,
-            "y" : 224.0
+            "x" : 952.0,
+            "y" : 320.0
           },
           "properties" : {
             "result-contents" : "insert-entire-record",
